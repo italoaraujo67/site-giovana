@@ -1,54 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Studio Giovana Almeida</title>
-  <link rel="stylesheet" href="main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estúdio Giovana - Cílios</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Studio Giovana Almeida</h1>
-    <nav>
-      <a href="#servicos">Serviços</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
+    <header>
+        <h1>Estúdio Giovana</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="hero">
-    <h2>𝐎𝐥𝐡𝐚𝐫 𝐦𝐚𝐫𝐜𝐚𝐧𝐭𝐞 𝐭𝐨𝐝𝐨𝐬 𝐨𝐬 𝐝𝐢𝐚𝐬!</h2>
-    <p>Agende agora e transforme seu olhar!</p>
-    <a href="https://wa.me/5511954306766" class="btn-whatsapp" target="_blank">Agendar no WhatsApp</a>
-  </section>
+    <main>
+        <section id="home">
+            <h2>Bem-vinda ao Estúdio Giovana</h2>
+            <p>Transforme seu olhar com nossos serviços de alta qualidade e atendimento personalizado.</p>
+        </section>
 
-  <section id="servicos" class="servicos">
-    <h3>Serviços</h3>
-    <ul>
-      <li>Extensão de Cílios</li>
-      <li>Lash Lifting</li>
-      <li>Design de Sobrancelhas</li>
-    </ul>
-  </section>
+        <section id="sobre">
+            <h2>Quem Somos</h2>
+            <p>Especialista em cílios e apaixonada pela beleza natural. Aqui você encontra confiança, dedicação e cuidado em cada detalhe.</p>
+        </section>
 
-  <section id="galeria" class="galeria">
-    <h3>💖</h3>
-    <div class="fotos">
-      <img src="cilios1.jpg.jpeg" alt="Foto 1" />
-      <img src="cilios2.jpg.jpeg" alt="Foto 2" />
-      <img src="cilios3.jpg.jpeg" alt="Foto 3" />
-    </div>
-  </section>
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <ul>
+                <li><strong>Alongamento de Cílios:</strong> Técnica fio a fio, volume russo e híbrido.</li>
+                <li><strong>Curvatura:</strong> Realce natural para seus cílios.</li>
+                <li><strong>Design de Sobrancelhas:</strong> Harmonização facial com precisão.</li>
+            </ul>
+        </section>
 
-  <section id="contato" class="contato">
-    <h3>Contato</h3>
-    <p>Siga no Instagram: <a href="https://www.instagram.com/_.studiogiovanaalmeida" target="_blank">@_.studiogiovanaalmeida</a></p>
-  </section>
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <div class="fotos">
+                <img src="foto1.jpg" alt="Antes e Depois">
+                <img src="foto2.jpg" alt="Cílios Volume Russo">
+                <img src="foto3.jpg" alt="Design de Sobrancelha">
+            </div>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 Studio Giovana Almeida. Todos os direitos reservados.</p>
-  </footer>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Agende seu horário pelo formulário abaixo ou entre em contato pelas redes sociais.</p>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Seu nome" required>
 
-  <script src="app.js"></script>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Seu email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Estúdio Giovana. Desenvolvido com carinho.</p>
+    </footer>
 </body>
 </html>
